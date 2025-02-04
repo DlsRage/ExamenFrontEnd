@@ -68,9 +68,9 @@ export const Formulario = () =>{
                         informacion.map((infor,index) =>(
                             <tr key={index}>
                                 <td>{infor.meses}</td>
-                                <td>{infor.capital}</td>
-                                <td>{infor.interes}</td>
-                                <td>{infor.saldo}</td>
+                        <td>{Number(infor.capital).toFixed(4)}</td>
+                        <td>{Number(infor.interes).toFixed(4)}</td>
+                        <td>{Number(infor.saldo).toFixed(4)}</td>
                             </tr>
                         ))
                     }
